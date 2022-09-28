@@ -1,8 +1,7 @@
-const form = document.getElementById(`searchBar`);
-
-form.addEventListener('submit',search);
+document.getElementById(`searchBar`).addEventListener('submit',search);
 document.getElementById('feelingLucky').addEventListener('click',getRandom);
 document.getElementById('showMeAll').addEventListener('click',getAll);
+document.getElementById('showSponsors').addEventListener('click',getSponsors);
 
 function getAll(e){
     e.preventDefault();
@@ -66,6 +65,14 @@ function getRandom(e){
     e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(data => sendResult(data[Math.floor(Math.random()*data.length)]))
+    .then(data => sendResult(data[Math.floor(Math.random() * data.length)]))
+    .catch(console.warn)
+}
+
+function getSponsors(e){
+    e.preventDefault();
+    fetch(`http://localhost:3000/database`)
+    .then(r => r.json())
+    .then(data => sendResults(data.filter(x => x.id.toString().length === 3)))
     .catch(console.warn)
 }

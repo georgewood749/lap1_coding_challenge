@@ -67,7 +67,55 @@ const data = [
         url: "https://www.cat.com/",
         title: "Cat.com | Cat | Caterpillar",
         des: "Welcome! Select a region and language to continue. Select a Region, Africa, Middle-East, Asia, Australia, New Zealand, Eurasia, Europe, Latin ..."
-    }
+    },
+    {   id: 102,
+        url: "https://www.mcdonalds.com/gb/en-gb.html",
+        title: "McDonald's UK",
+        des: "McDelivery®. Your favourites, delivered. Order through the McDonald's app, Uber Eats or Just Eat and we'll bring it to you."
+    },
+    
+    {   id: 103,
+        url: "https://www.dominos.co.uk/",
+        title: "Domino's Pizza: Order Online For A Tasty Pizza Delivery",
+        des: "Visit Domino's Pizza for a tasty pizza delivery or takeaway near me. Order online today for a piping hot pizza delivered directly to your door."
+    },
+    
+    {   id: 104,
+        url: "https://www.getfutureproof.co.uk/",
+        title: "futureproof: Technology Training Company",
+        des: "futureproof is a technology training company, launching and developing diverse, high-quality junior talent into your tech teams."
+    },
+    
+    {   id: 105,
+        url: "https://getbootstrap.com/",
+        title: "Bootstrap · The most popular HTML, CSS, and JS library in the ...",
+        des: "Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and ..."
+    },
+    {   id: 106,
+        url: "https://code.visualstudio.com/",
+        title: "Visual Studio Code - Code Editing. Redefined",
+        des: "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Visual Studio Code is free and ..."
+    },
+    {   id: 107,
+        url: "https://github.com/",
+        title: "GitHub: Where the world builds software · GitHub",
+        des: "GitHub is where over 83 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, ..."
+    },
+    {   id: 108,
+        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        title: "Important stuff here",
+        des: "DO NOT OPEN"
+    },
+    {   id: 109,
+        url: "https://en.wikipedia.org/wiki/Thomas_Crowther_(ecologist)",
+        title: "Thomas Crowther (ecologist) - Wikipedia",
+        des: "Thomas Ward Crowther (born 1986) is a professor of ecology at ETH Zurich and co-chair of the advisory board for the United Nations Decade on Ecosystem ..."
+    },
+    {   id: 110,
+        url: "https://github.com/georgewood749/lap1_coding_challenge",
+        title: "georgewood749/lap1_coding_challenge",
+        des: "This is the Github repo for this challenge."
+    }, 
 ]
 
 
@@ -85,6 +133,8 @@ class Data {
         const results = data.map((result) => new Data(result));
         return results;
     }
+
+
 
     static findByID(id) {
         try {

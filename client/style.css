@@ -1,4 +1,21 @@
 footer{
-    position: fixed;
     bottom: 0;
+}
+
+section > ul, li {
+    list-style: none;
+}
+
+section li {
+    margin-bottom: 15px;
+}
+
+form{
+    margin-left: 15px;
+}
+
+section{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 15px;
 }
