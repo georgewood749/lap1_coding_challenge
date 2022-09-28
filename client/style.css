@@ -14,8 +14,10 @@ form{
     margin-left: 15px;
 }
 
-#results{
-    margin: 15px 30px 15px 30px;
+section{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 15px;
 }
 
 header {
@@ -24,7 +26,12 @@ header {
 
 #logoRow {
     padding-top: 175px;
+    margin-bottom: 35px;
     text-align: center;
+}
+
+.logo {
+    height: 100px;
 }
 
 #buttonRow {
@@ -33,10 +40,9 @@ header {
 }
 
 #keywords {
-    margin-left: 34%;
+    margin-left: 31%;
     padding-left: 40px;
-    /* margin-right: 25%; */
-    width: 30%;
+    width: 35%;
     border-radius: 40px;
     border: 1px grey solid;
     height: 40px;
@@ -44,9 +50,7 @@ header {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 10px center;
-    /* display: block;
-    height: 100%;
-    width: 100%; */
+
 }
 
 #keywords:hover {
@@ -56,9 +60,23 @@ header {
 #feelingLucky {
     /* margin-left: 82%; */
     border: 0px;
+    margin-top: 11px;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+#feelingLucky:hover {
+    border: 1px solid #dadce0;
 }
 
 #showMeAll {
     /* margin-right: 82%; */
     border: 0px;
+    margin-top: 11px;
+    background-color: #f8f9fa;
+    padding: 8px;
+}
+
+#showMeAll:hover {
+    border: 1px solid #dadce0;;
 }
