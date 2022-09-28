@@ -36,11 +36,7 @@ footer {
     bottom: 0;
     justify-content: space-around;
     background: #f2f2f2;
-}
-
-#carbonNeutral {
-    /* justify-content: center; */
-    display: flex;
+    padding-top: 5px;
 }
 
 footer>div>a {
@@ -51,6 +47,20 @@ footer>div>a {
 footer>div>a:hover {
     text-decoration: underline;
     color: #70757a;
+}
+
+#country {
+    bottom: 0;
+    justify-content: space-around;
+    background: #f2f2f2;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#carbonNeutral {
+    justify-content: center;
+    display: flex;
 }
 
 /* section {
@@ -140,7 +150,7 @@ form {
 
 #feelingLucky {
     /* margin-left: 82%; */
-    border: 0px;
+    border: 1px solid #f8f9fa;
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
@@ -153,7 +163,7 @@ form {
 
 #showMeAll {
     /* margin-right: 82%; */
-    border: 0px;
+    border: 1px solid #f8f9fa;
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
