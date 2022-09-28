@@ -3,23 +3,33 @@ const form = document.getElementById(`searchBar`);
 // form.addEventListener('submit',search);
 form.addEventListener('submit',getAll);
 
-function getAll(){
+function getAll(e){
+    e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(appendResults)
+    .then(sendResults)
     .catch(console.warn)
 }
 
-function appendResults(results){
+function sendResults(results){
     const listOfResults = document.getElementById('results');
+    listOfResults.innerHTML = "";
+    console.log(results);
     for (let result of results){
-        result = document.createElement('li');
-        res.textContent = `${results.title} <br> ${results.des}`;
-        listOfResults.append(result)
-    }
-        
+        let resTitle = document.createElement('li');
+        listOfResults.append(resTitle);
 
-    
+        let resTitleURL = document.createElement('a');
+        resTitleURL.href = result.url;
+        resTitleURL.appendChild(document.createTextNode(result.title));
+        resTitle.appendChild(resTitleURL);
+        
+        let resDes = document.createElement('li');
+        resDes.textContent = result.des;
+        let sublist = document.createElement('ul');
+        sublist.append(resDes);
+        resTitle.append(sublist);
+    }
 }
 
 

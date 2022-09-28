@@ -13,59 +13,11 @@ const data = [
         title: 'The Official Pokémon Website | Pokemon.co.uk',
         des: 'The official source for Pokémon news and information on the Pokémon Trading Card Game, apps, video games, animation, and the Pokédex.'
     },
-    {
-        id: 3,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 4,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 5,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 6,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 7,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 8,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 9,
-        url: ,
-        title: ,
-        des:
-    },
-    {
-        id: 10,
-        url: ,
-        title: ,
-        des:
-    },
-
     //10 sponser results
-    {url: "https://www.cat.com/",
-    title: "Cat.com | Cat | Caterpillar",
-    des: "Welcome! Select a region and language to continue. Select a Region, Africa, Middle-East, Asia, Australia, New Zealand, Eurasia, Europe, Latin ..."
+    {   id: 101,
+        url: "https://www.cat.com/",
+        title: "Cat.com | Cat | Caterpillar",
+        des: "Welcome! Select a region and language to continue. Select a Region, Africa, Middle-East, Asia, Australia, New Zealand, Eurasia, Europe, Latin ..."
     }
 ]
 

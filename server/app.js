@@ -22,11 +22,7 @@ app.post('/', (req, res) => {
 
 //route for database
 const Data = require('./data')
-app.get('/database', (req,res) => {
-
-    res.send('hi')
-
-})
+app.get('/database', (req,res) => { res.send(Data.all);})
 
 
 
