@@ -24,7 +24,7 @@ app.post('/', (req, res) => {
 const Data = require('./data')
 app.get('/database', (req,res) => {
 
-    res.send('hi')
+    res.send(Data.all)
 
 })
 
