@@ -5,9 +5,8 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 
-// const catRoutes = require('./controllers/cats');
-// app.use('/cats', catRoutes);
 
+//Homepage
 app.get('/', (req, res) => {
     res.send('Hello there!');
 });
@@ -16,4 +15,17 @@ app.post('/', (req, res) => {
     res.status(405).send('Not allowd!');
 });
 
+
+//route for database
+const Data = require('./data')
+app.get('/database', (req,res) => {
+
+    res.send('hi')
+
+})
+
+
+
+
 module.exports = app;
+
