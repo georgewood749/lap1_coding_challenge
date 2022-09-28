@@ -20,3 +20,5 @@ router.get('/:id', (req, res) => {
         res.status(404).send({message: err.message})
     }
 })
+
+module.exports = router;
