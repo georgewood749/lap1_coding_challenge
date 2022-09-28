@@ -100,6 +100,7 @@ form {
 #buttonRow {
     text-align: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 #searchRow {
@@ -129,8 +130,8 @@ form {
     height: 44px;
     width: 100%;
     padding: 13px;
-    padding-left: 45px;
-    padding-right: 60px;
+    padding-left: 35px;
+    /* padding-right: 60px; */
     justify-content: center;
     align-content: center;
     border-radius: 24px;
@@ -154,7 +155,7 @@ form {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
-    margin: 0px 20px 0px 0px
+    margin: 0px 5px 0px 0px
 }
 
 #feelingLucky:hover {
@@ -167,7 +168,7 @@ form {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
-    margin: 0px 0px 0px 20px
+    margin: 0px 0px 0px 5px
 }
 
 #showMeAll:hover {
