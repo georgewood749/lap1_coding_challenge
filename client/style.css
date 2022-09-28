@@ -1,37 +1,90 @@
-footer{
+header {
+    text-align: center;
+    /* margin-top: 2%; */
+    justify-content: center;
+    display: inline-block;
+}
+
+header>div {
+    margin-top: 30px;
+    align-items: center;
+}
+
+header>div>img {
+    top: 10px
+}
+#apps {
+    top: 10px
+}
+#profile {
+    top: 10px
+}
+
+header>div>a {
+    margin-top: 40px;
+    align-items: center;
+    text-decoration: none;
+    color: #70757a;
+}
+
+header>div>a:hover {
+    text-decoration: underline;
+    color: #70757a;
+}
+
+footer {
     bottom: 0;
+    justify-content: space-around;
+    background: #f2f2f2;
 }
 
-section > ul, li {
-    list-style: none;
+#carbonNeutral {
+    /* justify-content: center; */
+    display: flex;
 }
 
-section li {
-    margin-bottom: 15px;
+footer>div>a {
+    text-decoration: none;
+    color: #70757a;
 }
 
-form{
-    margin-left: 15px;
+footer>div>a:hover {
+    text-decoration: underline;
+    color: #70757a;
 }
 
-section{
+/* section {
     border: 2px solid grey;
     border-radius: 5px;
     margin: 15px;
+} */
+
+section>ul,
+li {
+    list-style: none;
 }
 
-header {
-    text-align: center;
+/* section li {
+    margin-bottom: 15px;
+} */
+
+form {
+    margin-left: 15px;
 }
 
 #logoRow {
-    padding-top: 175px;
+    /* padding-top: 175px; */
     margin-bottom: 35px;
     text-align: center;
 }
 
 .logo {
-    height: 100px;
+    height: 92px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
 }
 
 #buttonRow {
@@ -39,18 +92,46 @@ header {
     justify-content: center;
 }
 
+#searchRow {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
 #keywords {
-    margin-left: 31%;
-    padding-left: 40px;
-    width: 35%;
-    border-radius: 40px;
-    border: 1px grey solid;
-    height: 40px;
+    position: relative;
+    display: flex;
+    max-width: 584px;
+    margin-left: 70%;
+    margin-right: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    height: 44px;
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+
+
     background-image: url('./images/search.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 10px center;
-
 }
 
 #keywords:hover {
@@ -63,6 +144,7 @@ header {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
+    margin: 0px 20px 0px 0px
 }
 
 #feelingLucky:hover {
@@ -75,8 +157,10 @@ header {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
+    margin: 0px 0px 0px 20px
 }
 
 #showMeAll:hover {
-    border: 1px solid #dadce0;;
+    border: 1px solid #dadce0;
+    ;
 }
