@@ -1,7 +1,12 @@
+//Set up Blind Event Listeners
 document.getElementById(`searchBar`).addEventListener('submit',search);
 document.getElementById('feelingLucky').addEventListener('click',getRandom);
 document.getElementById('showMeAll').addEventListener('click',getAll);
 document.getElementById('showSponsors').addEventListener('click',getSponsors);
+
+//Initialised Variables
+let luckyIndex = 0;
+let luckyColor = ["initial", "red", "Yellow", "blue", "green"]
 
 function getAll(e){
     e.preventDefault();
@@ -42,7 +47,17 @@ function search(e){
     e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(data => sendResults(filter(data, e.target.keywords.value)))
+    .then(data => {
+        const filtered = filter(data, e.target.keywords.value);
+
+        //ADs injection
+        for(let i = filtered.length; i < 10; i++)
+        {
+            filtered.push((data.filter(x => x.id.toString().length === 3)[Math.floor(Math.random() * 9)]));
+        }
+
+        sendResults(filtered)
+    })
     .catch(console.warn)
 }
 
@@ -65,8 +80,11 @@ function getRandom(e){
     e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(data => sendResult(data[Math.floor(Math.random() * data.length)]))
+    .then(data => sendResult(data.filter(x => x.id.toString().length === 3)[Math.floor(Math.random() * 9)]))
     .catch(console.warn)
+
+    luckyIndex++
+    document.getElementById('feelingLucky').style.backgroundColor = luckyColor[luckyIndex%5];
 }
 
 function getSponsors(e){
