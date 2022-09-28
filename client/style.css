@@ -37,6 +37,8 @@ footer {
     justify-content: space-around;
     background: #f2f2f2;
     padding-top: 5px;
+    position: fixed;
+    width: 100%;
 }
 
 footer>div>a {
@@ -56,6 +58,9 @@ footer>div>a:hover {
     border-bottom: 1px solid lightgrey;
     padding-left: 10px;
     padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 #carbonNeutral {
