@@ -1,0 +1,66 @@
+footer{
+    bottom: 0;
+}
+
+section > ul, li {
+    list-style: none;
+}
+
+section li {
+    margin-bottom: 15px;
+}
+
+form{
+    margin-left: 15px;
+}
+
+section{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+#logoRow {
+    padding-top: 175px;
+    text-align: center;
+}
+
+#buttonRow {
+    text-align: center;
+    justify-content: center;
+}
+
+#keywords {
+    margin-left: 34%;
+    padding-left: 40px;
+    /* margin-right: 25%; */
+    width: 30%;
+    border-radius: 40px;
+    border: 1px grey solid;
+    height: 40px;
+    background-image: url('./images/search.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /* display: block;
+    height: 100%;
+    width: 100%; */
+}
+
+#keywords:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+#feelingLucky {
+    margin-left: 82%;
+    border: 0px;
+}
+
+#showMeAll {
+    margin-right: 82%;
+    border: 0px;
+}
