@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.send('Hello there!');
 });
 
+app.get('/1', (req, res) => {
+    res.send('This is a test.');
+});
+
 app.post('/', (req, res) => {
     res.status(405).send('Not allowd!');
 });
