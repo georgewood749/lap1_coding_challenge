@@ -41,20 +41,25 @@ function sendResults(results){
 
 function search(e){
     e.preventDefault();
-
-    const searchingData = {
-        keywords: e.target.keywords.value
-    };
-
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(data => sendResults(filter(data, searchingData.keywords)))
+    .then(data => sendResults(filter(data, e.target.keywords.value)))
     .catch(console.warn)
 }
 
 function filter(data, keywords){
-    
-    return 
+    const keywordsArray = keywords.split(' ').filter(w => w.length !== 0);
+    const matched = [];
+    data.forEach(x => {
+        for(keyword of keywordsArray){
+            let kw = new RegExp(keyword,'ig');
+            if (x.title.match(kw) || x.des.match(kw)){
+                matched.push(x);
+                break;
+            }
+        };
+    })
+    return matched
 }
 
 function getRandom(e){
