@@ -5,44 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-
-    <title>Woogle</title>
     <link rel="shortcut icon" href="./woogle.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
+    <title>Woogle</title>
 </head>
 
 <body>
-    <header>
-        <img src="./logo.png" alt="Woogle logo" href="'./index.html">
-    </header>
+    <div class="container-fluid">
+        <header id="headerBar" class="d-flex justify-content-between ">
 
-    <form id="searchBar">
-        <input type="search" id="keywords" placeholder="Search Keywords">
-        <input type="submit" value="Search">
-        <button id="feelingLucky">Feeling Lucky</button>
-        <button id="showMeAll">Show me all</button>
-        <button id="showSponsors">Sponsorship</button>
-    </form>
+            <div id="about" class="col-md-1">
+                <p>About</p>
+            </div>
 
-    <section >
-        <ul id="results">
-            
-        </ul>
-    </section>
+            <div id="store" class="col-md-1">
+                <p>Store</p>
+            </div>
 
-    <footer>
-        <script async src="https://cse.google.com/cse.js?cx=0749d190ac7c94c24">
-        </script>
-        <div class="gcse-search"></div>
-    </footer>
+            <div id="headerPadding" class="col-md-6">
+            </div>
 
+            <div id="gmail" class="col-md-1">
+                <p>Gmail</p>
+            </div>
+
+            <div id="images" class="col-md-1">
+                <p>Images</p>
+            </div>
+
+            <div id="apps" class="col-md-1">
+                <img src="../client/images/apps.png" alt="Apps">
+            </div>
+
+            <div id="profile" class="col-md-1">
+                <img src="../client/images/account.png" alt="Account">
+            </div>
+
+        </header>
+
+        <div id="logoRow" class="row ">
+            <div id="logo" class="col-md-12">
+                <img class="logo" src="../client/images/logo.png" alt="Woogle logo" href="'./index.html">
+            </div>
+        </div>
+        <form id="searchBar">
+            <div id="searchRow" class="row">
+                <div id="searchBar" class="col-md-12">
+                    <input type="search" id="keywords">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
+            <div id="buttonRow" class="row">
+                <div id="" class="col-md">
+                </div>
+                <div id="luckyButton" class="col-md">
+                    <button id="feelingLucky">Feeling Lucky</button>
+                    <button id="showMeAll">Show me all</button>
+                </div>
+                <div id="" class="col-md">
+                </div>
+            </div>
+        </form>
+
+        <div id="" class="row">
+            <div id="" class="col-md">
+            </div>
+            <div id="" class="col-md">
+                <section >
+                    <ul id="results">
+                        
+                    </ul>
+                </section>
+            </div>
+            <div id="" class="col-md">
+            </div>
+
+        </div>
+        
+        <div id="" class="row">
+            <div id="" class="col-md-12">
+            </div>
+        </div>
+        <div id="" class="row">
+            <div id="" class="col-md-1">
+            </div>
+            <div id="" class="col-md-1">
+            </div>
+            <div id="" class="col-md-1">
+            </div>
+            <div id="" class="col-md-6">
+            </div>
+            <div id="" class="col-md-1">
+            </div>
+            <div id="" class="col-md-1">
+            </div>
+            <div id="" class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 
 </html>

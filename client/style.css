@@ -14,10 +14,8 @@ form{
     margin-left: 15px;
 }
 
-section{
-    border: 2px solid grey;
-    border-radius: 5px;
-    margin: 15px;
+#results{
+    margin: 15px 30px 15px 30px;
 }
 
 header {
@@ -56,11 +54,11 @@ header {
 }
 
 #feelingLucky {
-    margin-left: 82%;
+    /* margin-left: 82%; */
     border: 0px;
 }
 
 #showMeAll {
-    margin-right: 82%;
+    /* margin-right: 82%; */
     border: 0px;
 }
