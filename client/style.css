@@ -1,12 +1,12 @@
 header {
     text-align: center;
-    /* margin-top: 2%; */
     justify-content: center;
     display: inline-block;
+    min-height: 60px;
 }
 
 header>div {
-    margin-top: 30px;
+    margin:auto;
     align-items: center;
 }
 
@@ -32,8 +32,11 @@ header>div>a:hover {
     color: #70757a;
 }
 
+
+
 footer {
     bottom: 0;
+    text-align: center;
     justify-content: space-around;
     background: #f2f2f2;
     padding-top: 5px;
@@ -91,17 +94,19 @@ form {
 #logoRow {
     /* padding-top: 175px; */
     /* margin-bottom: 20px; */
+    min-height: 290px;
     text-align: center;
 }
 
 .logo {
     height: 92px;
+    
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
     object-position: center bottom;
     width: auto;
-    margin-top: auto;
+    margin-top: 198px;
 }
 
 #buttonRow {
@@ -112,12 +117,16 @@ form {
 
 /* Need to link the search bar in with the buttons and center it all on the page */
 
+#searchBar{
+    padding-top: 20px;
+}
+
 #searchRow {
-    width: 580px;
-    display: flex;
+    /* min-width: 580px; */
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 #searchBox {
@@ -127,14 +136,8 @@ form {
 }
 
 #keywords {
-    position: relative;
-    display: flex;
-    max-width: 584px;
-    margin-left: 70%;
-    margin-right: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    min-width: 584px;
+
 
     height: 44px;
     width: 100%;
