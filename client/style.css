@@ -8,16 +8,19 @@ header {
 header>div {
     margin:auto;
     align-items: center;
+    justify-content: space-around;
 }
 
 header>div>img {
-    top: 10px
+    top: 10px;
 }
-#apps {
-    top: 10px
+#apps, #profile {
+    top: 10px;
+    cursor: pointer;
 }
-#profile {
-    top: 10px
+
+#about, #store, #gmail, #images {
+    width: 1%;
 }
 
 header>div>a {
@@ -31,8 +34,6 @@ header>div>a:hover {
     text-decoration: underline;
     color: #70757a;
 }
-
-
 
 footer {
     bottom: 0;
@@ -56,7 +57,7 @@ footer>div>a:hover {
     color: #70757a;
 }
 
-#uk {
+#country {
     text-align: left;
     color: #70757a;
     border-bottom: 1px solid lightgrey;
@@ -106,6 +107,7 @@ form {
     object-position: center bottom;
     width: auto;
     margin-top: 198px;
+    cursor: pointer;
 }
 
 #buttonRow {

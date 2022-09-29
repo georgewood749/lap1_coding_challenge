@@ -16,7 +16,7 @@ app.get('/1', (req, res) => {
     res.send('This is a test.');
 });
 
-app.post('/', (req, res) => {
+app.post('/database', (req, res) => {
     res.status(405).send('Not allowed!');
 });
 
@@ -25,7 +25,14 @@ app.post('/', (req, res) => {
 const Data = require('./data')
 app.get('/database', (req,res) => { res.send(Data.all);})
 
-
+app.get('/database/:id', (req, res) => {
+    const id = req.params.id;
+    if (id < Data.length){
+        res.send(Data[id])
+    } else {
+        res.status(404).send('Not found!');
+    }
+})
 
 
 module.exports = app;
