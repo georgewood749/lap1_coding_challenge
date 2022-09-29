@@ -5,10 +5,10 @@ This week's coding challenge requires us to create our own simplistic version of
 
 ## Installation and Usage
 ##### Installation
--Clone the repo into a folder of your choosing on your machine.
--Once you have cloned the repo and opened in VS Code, enter `cd server` in the terminal to move into the server directory.
--You'll need to install the node modules used in the project, this can be achieved by typing `npm i` or `npm install`.
--Once you have the required node packages installed, you'll need to enter `npm run dev` in the terminal to start up the server.
+- Clone the repo into a folder of your choosing on your machine.
+- Once you have cloned the repo and opened in VS Code, enter `cd server` in the terminal to move into the server directory.
+- You'll need to install the node modules used in the project, this can be achieved by typing `npm i` or `npm install`.
+- Once you have the required node packages installed, you'll need to enter `npm run dev` in the terminal to start up the server.
 
 
 ##### Usage
@@ -27,14 +27,14 @@ However, we are yet to add functionality for the apps and profile buttons in the
 
 
 ## Bugs
--Footer was not displaying on the bottom of the page due to the results section. The footer was only dropping to the bottom of the page after a search has been run. This was solved by using fixed positioning for the footer and some hard-coding.
+- Footer was not displaying on the bottom of the page due to the results section. The footer was only dropping to the bottom of the page after a search has been run. This was solved by using fixed positioning for the footer and some hard-coding.
 
 
 ## Wins and Challenges
 ##### Wins
--Functionality works as intended
--Styling matches Google's own quite well
--No issues with the server
+- Functionality works as intended
+- Styling matches Google's own quite well
+- No issues with the server
 
 ##### Challenges
--Some styling required hard-coding to get the intended effect, we've attempted to avoid this where possible however, but due to time contstraints some css properties have remained hard-coded.
+- Some styling required hard-coding to get the intended effect, we've attempted to avoid this where possible however, but due to time contstraints some css properties have remained hard-coded.
