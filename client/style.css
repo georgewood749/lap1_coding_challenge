@@ -39,10 +39,11 @@ footer {
     text-align: center;
     justify-content: space-around;
     background: #f2f2f2;
-    padding-top: 5px;
+    /* padding-top: 5px; */
     position: fixed;
     width: 100%;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 footer>div>a {
@@ -61,17 +62,11 @@ footer>div>a:hover {
     border-bottom: 1px solid lightgrey;
     width: 100%;
     margin-left: 0;
-
-    /* left: 10; */
     bottom: 0;
-
     background: #f2f2f2;
-    
-    /* padding-left: 10px; */
     padding-top: 10px;
-    position: fixed;
-    
-    margin-bottom: 29px;
+    /* position: fixed; */
+    /* margin-bottom: 29px; */
 }
 
 #carbonNeutral {
