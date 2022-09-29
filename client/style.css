@@ -52,6 +52,7 @@ footer>div>a:hover {
 }
 
 #country {
+    /* Need to remove the gap without hard-coding */
     bottom: 0;
     justify-content: space-around;
     background: #f2f2f2;
@@ -89,7 +90,7 @@ form {
 
 #logoRow {
     /* padding-top: 175px; */
-    margin-bottom: 35px;
+    /* margin-bottom: 20px; */
     text-align: center;
 }
 
@@ -100,6 +101,7 @@ form {
     object-fit: contain;
     object-position: center bottom;
     width: auto;
+    margin-top: auto;
 }
 
 #buttonRow {
@@ -107,6 +109,8 @@ form {
     justify-content: center;
     margin-top: 20px;
 }
+
+/* Need to link the search bar in with the buttons and center it all on the page */
 
 #searchRow {
     width: 580px;
@@ -160,7 +164,7 @@ form {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
-    margin: 0px 5px 0px 0px
+    margin: 0px 0px 0px 5px
 }
 
 #feelingLucky:hover {
@@ -173,7 +177,7 @@ form {
     margin-top: 11px;
     background-color: #f8f9fa;
     padding: 8px;
-    margin: 0px 0px 0px 5px
+    margin: 0px 5px 0px 0px
 }
 
 #showMeAll:hover {
