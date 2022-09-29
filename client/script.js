@@ -2,18 +2,25 @@
 document.getElementById(`searchBar`).addEventListener('submit',search);
 document.getElementById('feelingLucky').addEventListener('click',getRandom);
 document.getElementById('showMeAll').addEventListener('click',getAll);
-document.getElementById('showSponsors').addEventListener('click',getSponsors);
+//- No longer used.
+// document.getElementById('showSponsors').addEventListener('click',getSponsors);
 
 //Initialised Variables for getRandom()
 let luckyIndex = 0;
 let luckyColor = ["initial", "red", "Yellow", "blue", "green"]
 
+//Show me all button clicked count
+let clicked = 1;
 
 function getAll(e){
     e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(sendResults)
+    .then(x => {
+        // click once more to toggle off
+        clicked++
+        clicked%2 === 0 ? sendResults(x) : document.getElementById('results').innerHTML = ""
+    })
     .catch(console.warn)
 }
 
@@ -116,17 +123,17 @@ function getRandom(e){
     document.getElementById('feelingLucky').style.backgroundColor = luckyColor[luckyIndex%5];
 }
 
-//to show all sponsors
-function getSponsors(e){
-    e.preventDefault();
-    fetch(`http://localhost:3000/database`)
-    .then(r => r.json())
-    .then(data => sendResults(data.filter(x => x.id.toString().length === 3)))
-    .catch(console.warn)
-}
+//to show all sponsors - No longer used.
+// function getSponsors(e){
+//     e.preventDefault();
+//     fetch(`http://localhost:3000/database`)
+//     .then(r => r.json())
+//     .then(data => sendResults(data.filter(x => x.id.toString().length === 3)))
+//     .catch(console.warn)
+// }
 
 function addition(a, b){
     return a + b;
 }
 
-module.exports = { getAll, appendResult, sendResult, sendResults, search, filter, getRandom, getSponsors, addition }
+module.exports = { getAll, appendResult, sendResult, sendResults, search, filter, getRandom, addition }
