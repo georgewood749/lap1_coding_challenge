@@ -42,6 +42,7 @@ footer {
     padding-top: 5px;
     position: fixed;
     width: 100%;
+    padding-left: 10px;
 }
 
 footer>div>a {
@@ -54,16 +55,22 @@ footer>div>a:hover {
     color: #70757a;
 }
 
-#country {
-    /* Need to remove the gap without hard-coding */
-    bottom: 0;
-    justify-content: space-around;
-    background: #f2f2f2;
+#uk {
+    text-align: left;
+    color: #70757a;
     border-bottom: 1px solid lightgrey;
-    padding-left: 10px;
+    width: 100%;
+    margin-left: 0;
+
+    /* left: 10; */
+    bottom: 0;
+
+    background: #f2f2f2;
+    
+    /* padding-left: 10px; */
     padding-top: 10px;
     position: fixed;
-    width: 100%;
+    
     margin-bottom: 29px;
 }
 
@@ -98,7 +105,6 @@ form {
 
 .logo {
     height: 92px;
-    
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
@@ -113,19 +119,17 @@ form {
     margin-top: 20px;
 }
 
-/* Need to link the search bar in with the buttons and center it all on the page */
-
 #searchBar{
     padding-top: 20px;
 }
 
-#searchRow {
-    /* min-width: 580px; */
-    /* display: flex;
+/* #searchRow {
+    min-width: 580px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
 #searchBox {
     position: relative;
@@ -183,5 +187,19 @@ form {
 
 #searchButton:hover {
     border: 1px solid #dadce0;
-    ;
+}
+
+.icons {
+    width: auto;
+    height: auto;
+}
+
+.icons:hover {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgb(235, 236, 236);
+    /* width: 40px;
+    height: 40px; */
 }
