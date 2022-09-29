@@ -2,7 +2,7 @@
 
 ## George &amp; Kai's Custom Google API - **_Woogle_**
 
-LAP 1 coding challenge requires us to create our own simplistic version of Google. And here we are ⬇
+LAP 1 coding challenge requires us to create our own simplistic version of Google. And here we are ⬇  
 
 ![Screen shot of end results](./README_IMG/endResult.png)
 
@@ -36,10 +36,12 @@ However, we are yet to add functionality for the apps and profile buttons in the
 
 ---
 ## Changelog
-1. Made a page with an embedded Google search bar
-![Google Programmable Search Engin](./README_IMG\Google_PSE.png | width=250)
-2. Created a custom API with custom links in it
-![Custom API Database](./README_IMG/Custom_API_Database.png | width=250)
+1. Made a page with an embedded Google search bar  
+<img src="./README_IMG\Google_PSE.png" width="300px" alt="Google Programmable Search Engin">
+<!-- ![Google Programmable Search Engin](./README_IMG\Google_PSE.png) -->
+2. Created a custom API with custom links in it  
+<img src="./README_IMG/Custom_API_Database.png" width="300px" alt="Custom API Database">
+<!-- ![Custom API Database](./README_IMG/Custom_API_Database.png) -->
 3. Created a button to display all results on the home page
 4. Created a feel lucky botton to display a random result
 5. Created the search algorithm and implement to the website
@@ -51,7 +53,8 @@ However, we are yet to add functionality for the apps and profile buttons in the
 - Footer was not displaying on the bottom of the page due to the results section. The footer was only dropping to the bottom of the page after a search has been run. 
     - This was solved by using fixed positioning for the footer and some hard-coding.
 - .forEach() would not iterates for single entry array.
-    - made a separated function for displaying a single entry array
+    - made a separated function for displaying a single entry array  
+<img src="./README_IMG\forEach_Bug.png" alt="Custom API Database">
 
 ---
 ## Wins and Challenges
