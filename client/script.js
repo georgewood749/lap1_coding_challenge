@@ -105,7 +105,7 @@ function getRandom(e){
     e.preventDefault();
     fetch(`http://localhost:3000/database`)
     .then(r => r.json())
-    .then(data => sendResults(
+    .then(data => sendResult(
         //All sponsors have a 3 digit id, exactly 10 sponsors in total
         data.filter(x => x.id.toString().length === 3)[Math.floor(Math.random() * 9)]
         ))
