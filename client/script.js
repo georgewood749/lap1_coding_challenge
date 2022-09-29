@@ -124,3 +124,9 @@ function getSponsors(e){
     .then(data => sendResults(data.filter(x => x.id.toString().length === 3)))
     .catch(console.warn)
 }
+
+function addition(a, b){
+    return a + b;
+}
+
+module.exports = { getAll, appendResult, sendResult, sendResults, search, filter, getRandom, getSponsors, addition }
