@@ -46,6 +46,6 @@ describe('API Server', () => {
     })
 
     it('responds to invalid id with 404', (done) => {
-        request(api).get('/cats/0').expect(404, done)
+        request(api).get('/database/0').expect(404, done)
     })
 })

@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-// const resultRoutes = require('../results')
+// const resultRoutes = require('../controllers/results')
 
 const app = express();
 app.use(express.json())
@@ -25,12 +25,28 @@ app.post('/database', (req, res) => {
 const Data = require('./data')
 app.get('/database', (req,res) => { res.send(Data.all);})
 
-app.get('/database/:id', (req, res) => {
-    const id = req.params.id;
-    if (id < Data.length){
-        res.send(Data[id])
-    } else {
-        res.status(404).send('Not found!');
+// app.use('/database', resultRoutes);
+
+// app.get('/database/:id', (req, res) => {
+//     const id = req.params.id;
+//     if (id < Data.length){
+//         res.send(Data[id])
+//     } else {
+//         res.status(404).send('Not found!');
+//     }
+// })
+
+app.get('/:id', (req, res) => {
+    try {
+        const id = parseInt(req.params.id - 1);
+        const selectedResult = Data.findById(id);
+        if (!selectedResult) {
+            throw new Error('This data does not exist')
+        }
+        res.send(selectedResult)
+    } catch (err) {
+        console.log(err)
+        res.status(404).send({message: err.message})
     }
 })
 
