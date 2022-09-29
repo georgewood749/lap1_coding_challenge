@@ -76,6 +76,7 @@ footer>div>a:hover {
 
 section {
     margin-bottom: 10px;
+    min-width: 584px;
 }
 
 section>ul,
