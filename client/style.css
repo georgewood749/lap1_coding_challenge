@@ -171,7 +171,7 @@ form {
     border: 1px solid #dadce0;
 }
 
-#showMeAll {
+#searchButton {
     /* margin-right: 82%; */
     border: 1px solid #f8f9fa;
     margin-top: 11px;
@@ -180,7 +180,7 @@ form {
     margin: 0px 5px 0px 0px
 }
 
-#showMeAll:hover {
+#searchButton:hover {
     border: 1px solid #dadce0;
     ;
 }
