@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const resultRoutes = require('../results')
+// const resultRoutes = require('../results')
 
 const app = express();
 app.use(express.json())
@@ -17,7 +17,7 @@ app.get('/1', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    res.status(405).send('Not allowd!');
+    res.status(405).send('Not allowed!');
 });
 
 

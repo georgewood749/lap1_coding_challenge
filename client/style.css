@@ -64,7 +64,7 @@ footer>div>a:hover {
     padding-top: 10px;
     position: fixed;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 #carbonNeutral {
@@ -72,11 +72,9 @@ footer>div>a:hover {
     display: flex;
 }
 
-/* section {
-    border: 2px solid grey;
-    border-radius: 5px;
-    margin: 15px;
-} */
+section {
+    margin-bottom: 10px;
+}
 
 section>ul,
 li {
