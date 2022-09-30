@@ -2,7 +2,7 @@
 document.getElementById(`searchBar`).addEventListener('submit',search);
 document.getElementById('feelingLucky').addEventListener('click',getRandom);
 document.getElementById('showMeAll').addEventListener('click',getAll);
-//- No longer used.
+//? No longer in use.
 // document.getElementById('showSponsors').addEventListener('click',getSponsors);
 
 //Initialised Variables for getRandom()
@@ -123,7 +123,7 @@ function getRandom(e){
     document.getElementById('feelingLucky').style.backgroundColor = luckyColor[luckyIndex%5];
 }
 
-//to show all sponsors - No longer used.
+//?to show all sponsors - No longer in use.
 // function getSponsors(e){
 //     e.preventDefault();
 //     fetch(`http://localhost:3000/database`)
@@ -132,6 +132,7 @@ function getRandom(e){
 //     .catch(console.warn)
 // }
 
+//Testing trial
 function addition(a, b){
     return a + b;
 }
