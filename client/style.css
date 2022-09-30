@@ -35,7 +35,7 @@ header>div>a:hover {
     color: #70757a;
 }
 
-footer {
+#linksRow {
     bottom: 0;
     text-align: center;
     justify-content: space-around;
@@ -43,16 +43,25 @@ footer {
     /* padding-top: 5px; */
     position: fixed;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 10px;
+    padding-top: 10px;
+    /* right: 0; */
+    left: 0;
 }
 
-footer>div>a {
+#linksRow>div>a {
     text-decoration: none;
     color: #70757a;
 }
 
-footer>div>a:hover {
+footer {
+    background-color: #f2f2f2;
+    right: 0;
+    margin-right: 0px;
+}
+
+#linksRow>div>a:hover {
     text-decoration: underline;
     color: #70757a;
 }
@@ -66,8 +75,11 @@ footer>div>a:hover {
     bottom: 0;
     background: #f2f2f2;
     padding-top: 10px;
-    /* position: fixed; */
-    /* margin-bottom: 29px; */
+    position: fixed;
+    margin-bottom: 46px;
+    padding-left: 15px;
+    right: 0;
+    left: 0;
 }
 
 #carbonNeutral {
