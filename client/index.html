@@ -2,131 +2,154 @@
 <html lang="en">
 
 <head>
+    <!-- Browser Info -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
+    <!-- Icon and Title-->
     <link rel="shortcut icon" href="../client/images/favicon.png" type="image/x-icon">
+    <title>Woogle</title>
+
+    <!-- Stylesheets and Scripts -->
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
-    <title>Woogle</title>
 </head>
 
 <body>
-    <div>
-        <header class="d-flex justify-content-between ">
 
-            <div id="about" class="col-md-1">
-                <a
-                    href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
-            </div>
+        <!-- Header (1x7) -->
+    <header class="d-flex justify-content-between ">
 
-            <div id="store" class="col-md-1">
-                <a
-                    href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
-            </div>
-
-            <div id="headerPadding" class="col-md-6">
-            </div>
-
-            <div id="gmail" class="col-md-1">
-                <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
-            </div>
-
-            <div id="images" class="col-md-1">
-                <a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
-            </div>
-
-            <div id="apps" class="col-md-1 icons">
-                <img src="../client/images/apps.png" alt="Apps" width="24px" height="24px">
-            </div>
-
-            <div id="profile" class="col-md-1 icons">
-                <img src="../client/images/account.png" alt="Account" width="24px" height="24px">
-            </div>
-
-        </header>
-
-        <div id="logoRow">
-            <div id="logo">
-                <a id="showMeAll"><img class="logo" src="../client/images/woogleLogo.png" alt="Woogle logo"></a>
-            </div>
-        </div>
-        <form id="searchBar">
-            <div id="searchRow" class="row">
-                <div class="col"></div>
-                <div id="searchBox" class="col">
-                    <input type="search" id="keywords">
-                </div>
-                <div class="col"></div>
-            </div>
-            <div id="buttonRow" class="row">
-                <div id="" class="col-md">
-                </div>
-                <div id="luckyButton" class="col-md">
-                    <input id="searchButton" type="submit" value="Woogle Search">
-                    <button id="feelingLucky">Feeling Lucky</button>
-                </div>
-                <div id="" class="col-md">
-                </div>
-            </div>
-        </form>
-
-        <div id="" class="row">
-            <div id="" class="col-md">
-            </div>
-            <div id="" class="col-md">
-                <section>
-                    <ul id="results">
-
-                    </ul>
-                </section>
-            </div>
-            <div id="" class="col-md">
-            </div>
-
+        <div id="about" class="col-md-1">
+            <a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
         </div>
 
+        <div id="store" class="col-md-1">
+            <a href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
+        </div>
 
-        <footer class="row">
-            <div id="country" class="row">
-                
-                    <p>United Kingdom</p>
-                
-            </div>
-            <div id="advertising" class="col-md-1">
-                <a
-                    href="https://www.google.co.uk/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-            </div>
-            <div id="business" class="col-md-1">
-                <a
-                    href="https://www.google.co.uk/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
-            </div>
-            <div id="howSearchWorks" class="col-md-2">
-                <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
-            </div>
-            <div id="carbonNeutral" class="col-md-5">
-                <a
-                    href="https://sustainability.google/intl/en-GB/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><img src="../client/images/carbonNeutral.png" alt="Carbon Neutral">Carbon
-                    neutral since 2007</a>
-            </div>
-            <div id="privacy" class="col-md-1">
-                <a
-                    href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwjuydCtwLj6AhVVmFwKHbqtAo0QPAgI#:~:text=neutral%20since%202007-,Privacy,-Terms">Privacy</a>
-            </div>
-            <div id="terms" class="col-md-1">
-                <a href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a>
-            </div>
-            <div id="settings" class="col-md-1">
-                <a
-                    href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwjuydCtwLj6AhVVmFwKHbqtAo0QPAgI#:~:text=Terms-,Settings">Settings</a>
-            </div>
-        </footer>
+        <div id="headerPadding" class="col-md-6"></div>
+
+        <div id="gmail" class="col-md-1">
+            <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+        </div>
+
+        <div id="images" class="col-md-1">
+            <a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a>
+        </div>
+
+        <div id="apps" class="col-md-1 icons">
+            <img src="../client/images/apps.png" alt="Apps" width="24px" height="24px">
+        </div>
+
+        <div id="profile" class="col-md-1 icons">
+            <img src="../client/images/account.png" alt="Account" width="24px" height="24px">
+        </div>
+
+    </header>
+
+        <!-- Logo Row -->
+    <div id="logoRow">
+
+        <div id="logo">
+            <a id="showMeAll"><img class="logo" src="../client/images/woogleLogo.png" alt="Woogle logo"></a>
+        </div>
+
     </div>
+    
+
+        <!-- Search Bar Form (2x3) -->
+    <form id="searchBar">
+
+        <div id="searchRow" class="row">
+
+            <div class="col"></div>
+
+            <div id="searchBox" class="col">
+                <input type="search" id="keywords">
+            </div>
+
+            <div class="col"></div>
+
+        </div>
+
+        <div id="buttonRow" class="row">
+
+            <div class="col-md"></div>
+
+            <div id="luckyButton" class="col-md">
+                <input id="searchButton" type="submit" value="Woogle Search">
+                <button id="feelingLucky">Feeling Lucky</button>
+            </div>
+
+            <div class="col-md"></div>
+
+        </div>
+
+    </form>
+
+
+        <!-- Results Section (1x3) -->
+    <div class="row">
+
+        <div class="col-md"></div>
+
+        <div class="col-md">
+            <section>
+                <ul id="results">   </ul>
+            </section>
+        </div>
+
+        <div class="col-md"></div>
+
+    </div>
+
+
+        <!-- Footer (1x) -->
+    <footer class="row">
+
+        <div id="country" class="row">
+            <p>United Kingdom</p>
+        </div>
+
+        <div id="advertising" class="col-md-1">
+            <a href="https://www.google.co.uk/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        </div>
+
+        <div id="business" class="col-md-1">
+            <a href="https://www.google.co.uk/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        </div>
+
+        <div id="howSearchWorks" class="col-md-2">
+            <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        </div>
+
+        <div id="carbonNeutral" class="col-md-5">
+            <a href="https://sustainability.google/intl/en-GB/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><img src="../client/images/carbonNeutral.png" alt="Carbon Neutral">Carbon
+                neutral since 2007</a>
+        </div>
+
+        <div id="privacy" class="col-md-1">
+            <a href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwjuydCtwLj6AhVVmFwKHbqtAo0QPAgI#:~:text=neutral%20since%202007-,Privacy,-Terms">Privacy</a>
+        </div>
+
+        <div id="terms" class="col-md-1">
+            <a href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a>
+        </div>
+
+        <div id="settings" class="col-md-1">
+            <a href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwjuydCtwLj6AhVVmFwKHbqtAo0QPAgI#:~:text=Terms-,Settings">Settings</a>
+        </div>
+
+    </footer>
 
 
 </body>
